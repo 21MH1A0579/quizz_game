@@ -1,27 +1,116 @@
-# QuizME
+Certainly! Below is an updated version of the `README.md` file that includes sections for images illustrating each step of running the project. You can replace the placeholder image paths with the actual paths to your images.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+```markdown
+# Quizify
 
-## Development server
+Quizify is an interactive quiz application built with Angular and PrimeNG. It allows users to take quizzes on various topics, track their scores, and view results in a user-friendly interface.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- User-friendly interface for taking quizzes.
+- Dynamic quiz generation based on user-selected categories and difficulty levels.
+- Real-time score tracking and result display.
+- Responsive design for various devices.
+- Confirmation dialog before submitting the quiz.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Technologies Used
 
-## Running unit tests
+- **Angular**: A platform for building mobile and desktop web applications.
+- **PrimeNG**: A collection of rich UI components for Angular.
+- **RxJS**: A library for reactive programming using Observables.
+- **TypeScript**: A superset of JavaScript that compiles to plain JavaScript.
+- **HTML/CSS**: For structuring and styling the application.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+To run the application locally, follow these steps:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Quizify.git
+   ```
 
-## Further help
+2. Navigate to the project directory:
+   ```bash
+   cd Quizify
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+3. Install the required dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   ng serve
+   ```
+
+5. Open your browser and navigate to `http://localhost:4200`.
+
+## Usage
+
+### Step 1: Enter Username and Select Category and Difficulty Level
+
+![Step 1: Enter Username and Select Category](./src/static/image.png)
+
+- Upon opening the application, you will be greeted with a welcome screen.
+- Enter your username and select a quiz category and difficulty level.
+- Click on "Start Quiz" to begin.
+
+### Step 2: MCQ Questions Appear
+
+![Step 2: MCQ Questions](./src/static/image2.png)
+
+- After starting the quiz, multiple-choice questions (MCQs) will appear with four options each.
+- Answer the questions and navigate through them using the "Prev" and "Next" buttons.
+
+### Step 3: Confirmation Dialog Before Submitting
+
+![Step 3: Submit Confirmation](./src/static/image3.png)
+
+- Once you have attempted all the questions, click on "Submit."
+- A pop-up will appear asking, "Do you want to submit?"
+
+### Step 4: View Results
+
+![Step 4: Results](./src/static/image4.png)
+
+- After submitting, the results will be displayed.
+- You will see your score (e.g., scored / out of total questions).
+- Below the score, each question will be listed with the correct answer and your answer.
+
+## File Structure
+
+```
+quizzify/
+├── app/
+│   ├── app-routing.module.ts
+│   ├── app.component.ts
+│   ├── app.module.ts
+│   ├── quiz/
+│   │   ├── quiz.component.ts
+│   │   ├── quiz.service.ts
+│   │   └── ...
+│   ├── welcome/
+│   │   ├── welcome.component.ts
+│   │   └── ...
+│   ├── result/
+│   │   ├── result.component.ts
+│   │   └── ...
+│   └── ...
+├── environments/
+│   ├── environment.ts
+│   └── environment.prod.ts
+├── index.html
+├── styles.css
+└── ...
